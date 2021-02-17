@@ -13,9 +13,11 @@
 	  }
 	</style>
 </head>
-<!-- elementId(this.id) -->
-<!-- CordUpdate(event) -->
-<!-- onmouseenter = CurrentElement(this.id) -->
+<!-- 
+onmousedown = elementId(this.id)   #Element wanted to be draggable
+onmousemove = CordUpdate(event)  #Put on container of draggable object or attach to body 
+onmouseenter = CurrentElement(this.id)    #This will return the quad that the piece being dragged it over
+-->
 <div id = "default"></div>
 <body>
 
