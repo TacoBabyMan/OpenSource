@@ -36,7 +36,7 @@ onmouseenter = CurrentElement(this.id)    #This will return the quad that the pi
 		ElementID = String(id);
 		document.getElementById(ElementID).style.position = "absolute";
 	}
-	//When mouse is down run the function with interval at 60ms
+	//When mouse is down run the function with interval at 0ms
 	function moused(){
 		mouse = setInterval(MouseDown,0);
 	}
