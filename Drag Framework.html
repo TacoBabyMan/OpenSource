@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- 
-onmousedown = elementId(this.id)   #Element wanted to be draggable
+onmousedown = elementId(this.id,event)   #Element wanted to be draggable
 onmousemove = CordUpdate(event)  #Put on container of draggable object or attach to body 
 onmouseenter = CurrentElement(this.id)    #This will return the quad that the piece being dragged it over
 -->
@@ -15,8 +15,9 @@ onmouseenter = CurrentElement(this.id)    #This will return the quad that the pi
 	var mouseX = 0;
 	var mouseY = 0;
 	//Get Element Id when it's clicked
-	function elementId(id){
+	function elementId(id,ev){
 		ElementID = String(id);
+		CordUpdate(ev);
 		document.getElementById(ElementID).style.position = "absolute";
 	}
 	//When mouse is down run the function with interval at 0ms
